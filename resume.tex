@@ -1,6 +1,40 @@
-\documentclass[12pt, letterpaper]{article}
+\documentclass[12pt, letterpaper, oneside, final]{scrartcl}
 \usepackage[utf8]{inputenc}
 
+\usepackage{scrlayer-scrpage} % Provides headers and footers configuration
+\usepackage{titlesec} % Allows creating custom \section's
+\usepackage{marvosym} % Allows the use of symbols
+\usepackage{tabularx,colortbl} % Advanced table configurations
+\usepackage{ebgaramond} % Use the EB Garamond font
+\usepackage{microtype} % To enable letterspacing
+
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule] % Section formatting
+
+\pagestyle{scrheadings} % Print the headers and footers on all pages
+
+\newcommand{\gray}{\rowcolor[gray]{.90}} % Custom highlighting for the work experience and education sections
+
+\renewcommand{\headfont}{\normalfont\rmfamily\scshape} % Font settings for footer
+
+\cofoot{
+\fontsize{12.5}{17}\selectfont % Letter spacing and font size
+
+\textls[150]{Seattle, WA}\\
+{\Large\Letter} \textls[150]{dustinroepsch@gmail.com \ {\Large\Telefon} (515) 708-9178}
+}
+
+%----------------------------------------------------------------------------------------
+
 \begin{document}
-test
+
+\begin{center} % Center everything in the document
+	
+	%----------------------------------------------------------------------------------------
+	%	HEADER SECTION
+	%----------------------------------------------------------------------------------------
+	
+	{\fontsize{20}{20}\selectfont\scshape\textls[200]{ Dustin Ryan-Roepsch}}
+	
+\end{center}
+
 \end{document}
